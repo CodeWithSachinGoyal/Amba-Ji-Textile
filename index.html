@@ -1,34 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Amba Ji Textile</title>
-        <style>
-            p{
-                color:greenyellow;  /*Element Selector*/
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amba Ji Textile</title>
+    <style>
+            p{  /*Element Selector*/
+                color:black;
                 font-size:"2em"
             }
-            img#a{border:2px solid rgb(138, 57, 57)
-                  /*Id selector */
+            img#a{ /*Id selector */
+                   border:2px solid rgb(138, 57, 57)
+                  
                  }
-        </style>
+            a#b{
+                text-decoration: none;
+                color:blue;
+                font-size: 32px;
+                font-weight: bold;
+                text-shadow: 10px 10px 10px red;
+            }
+            #c{ /*id selector*/
+               width: 400px;
+               height: 500px;
+               background-color: rgb(50, 53, 240);
+               margin-left: 10px;
+               margin-top: 10px;
+               padding-left: 10px;
+               padding-top: 10px;
+               text-align: center;
+               font-size: 12px;
+               font-size: Verdana;
+               float:left;
+            }
+            .d{ /*class selector*/
+                width: 400px;
+                height: 500px;
+                background-color: rgb(255,0,0);
+                margin-left: 10px;
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-top: 10px;
+                text-align: center;
+                font-size: 12px;
+                font-size: Verdana;
+                float:left;
+             }
+             a[href="./1.jpg"]{ /*Attribute Selector*/
+                                display: block;
+                                width: 200px;
+                                height: 200px;
+                                background: rgba(7, 7, 7, 0.979);
+                             }
+            *{  /*universal selector*/
+                font-family: 'Courier New', Courier, monospace';
+             }
+            div.d,div#c{ /*group /Combinational selector*/
+                         display: inline-block;
+                         border: 10px 10px black;
+
+            } 
+            div#c:hover{ /*pesudo class selector*/
+                         background-color: crimson;
+                       }
+            div.d:hover{ /*pesudo class selector*/
+                        background-color: rgb(20, 147, 220);
+                      }
+            div::before{ /*pesudo element selector*/
+                            transition:10000s;
+                                 }
+            #c1{
+                width:200px;
+                height:255px;
+                background-color: orange;
+            }
+            #c2{
+                width:200px;
+                height:255px;
+                background-color: rgba(255, 0, 149, 0.966);
+                float:Right;
+            }
+            #c3{
+                width:200px;
+                height:255px;
+                background-color: rgba(0, 238, 255, 0.966);
+            }
+            #p{
+                width:400px;
+                height:510px;
+                background-color:purple;
+                float:left;
+                margin-top: 10px;
+            } 
+            #p:hover #c1{ /*descendent selector*/
+                            background-color:navy ;
+                        }
+            
+            
+    </style>
 </head>
 <body>
-    <div>
+    <div id="p">
+        <div id="c1">
+            
+        </div>
+        <div id="c2">
+
+        </div>
+        <div id="c3">
+
+        </div>
+    </div>
+    <div id="c">
         <h1>
-            <strong>Welcome to Amba Ji Textile</strong>
+            <strong><center>Welcome to Amba Ji Textile</center></strong>
         </h1>
-        <h6>A one Step Shop</h6>
+        <h3>
+            <center>A one Step Shop</center>
+        </h3>
         <img id="a" src="./1.jpg">
-        <p><strong>our shop</strong>, we believe that fashion should be comfortable and accessible to everyone.
+        <p><strong>Our shop</strong>, we believe that fashion should be comfortable and accessible to everyone.
         That's why we prioritize using high-quality materials in our clothing, without sacrificing affordability.
         Whether you're looking for a casual and cozy outfit or something more polished, we have something for you.
         We also strive to be as eco-friendly as possible, using sustainable fabrics and packaging materials. 
         Our goal is to make you feel good about your purchase, both in terms of style and environmental impact.
         So come on in and browse our latest collection - we're confident you'll find something you love! 
         </p>
-        <a href="./address.html">Contact Us</a>
+        <a href="./address.html"  id="b">Contact Us</a>
     </div>      
+    <div class="d">
+        <h1>
+            <strong><center>Welcome To BR Aggarwal Traders</center></strong>
+        </h1>
+        <h3>
+            <center>A one Step Shop</center>
+        </h3>
+        <img id="a" src="./1.jpg">
+        <p><strong>Our shop</strong>, we believe that fashion should be comfortable and accessible to everyone.
+        That's why we prioritize using high-quality materials in our clothing, without sacrificing affordability.
+        Whether you're looking for a casual and cozy outfit or something more polished, we have something for you.
+        We also strive to be as eco-friendly as possible, using sustainable fabrics and packaging materials. 
+        Our goal is to make you feel good about your purchase, both in terms of style and environmental impact.
+        So come on in and browse our latest collection - we're confident you'll find something you love! 
+        </p>
+        <a href="./address.html"  id="b">Contact Us</a>
+    </div>
+
 </body>
 </html>
